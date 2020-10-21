@@ -1,0 +1,62 @@
+[
+  {
+    "Id": "0",
+    "Maker": "gvan",
+    "img": "https://logos-world.net/wp-content/uploads/2020/06/Tottenham-Hotspur-Logo-700x394.png",
+    "Url": "https://logos-world.net/tottenham-hotspur-logo-history/",
+    "Title": "Tottenham Hotspur",
+    "Description": "The history of the glorious Tottenham Hotspur football club began on Tuesday, September 5, 1882, under a street lamp at the corner of the Tottenham High Road and Park Lane streets. On that day, some of the thirteen-year-old pupils of one of the local schools decided to create their football team. Immediately they collected money and made a list of members of the new club.",
+    "Ratings": [
+      5,
+      5
+    ]
+  },
+  {
+    "Id": "1",
+    "Maker": "gvan",
+    "img": "https://logos-world.net/wp-content/uploads/2020/06/Liverpool-Logo-700x394.png",
+    "Url": "https://logos-world.net/liverpool-logo-history/",
+    "Title": "Liverpool",
+    "Description": "Founded in 1892, the club joined the Football League the following year and has played at Anfield since its formation. Liverpool established itself as a major force in English and European football in the 1970s and 1980s.",
+    "Ratings": null
+  },
+  {
+    "Id": "2",
+    "Maker": "gvan",
+    "img": "https://logos-world.net/wp-content/uploads/2020/06/Manchester-United-logo-700x394.png",
+    "Url": "https://logos-world.net/manchester-united-logo-history/",
+    "Title": "Manchester United",
+    "Description": "Manchester United was based on Newton Heath LYR Football Club in 1878. The club was found by the department of railway depots in the Manchester Newton Heath area. During this period, the team mainly consisted of workers of the railway company and played against the teams of other departments, and in 1888, the club joined the local league.",
+    "Ratings": null
+  },
+  {
+    "Id": "3",
+    "Maker": "gvan",
+    "img": "https://logos-world.net/wp-content/uploads/2020/06/Manchester-City-Logo-700x394.png",
+    "Url": "https://logos-world.net/manchester-city-logo-history/",
+    "Title": "Manchester City",
+    "Description": "Founded in 1880 as St. Mark\u0027s (West Gorton), it became Ardwick Association Football Club in 1887 and Manchester City in 1894.",
+    "Ratings": null
+  },
+  {
+    "Id": "4",
+    "Maker": "gvan",
+    "img": "https://logos-world.net/wp-content/uploads/2020/05/Chelsea-Logo-700x394.png",
+    "Url": "https://logos-world.net/chelsea-logo-history/",
+    "Title": "Chelsea",
+    "Description": "Chelsea was based in 1905. The first emblem of the club was a collective image of the British army veterans with medals on their chests. It was the logo of the Royal Hospital of Chelsea. It was not put on the form but appeared on the first match programs. So the club was nicknamed \uFFFDThe Pensioners.\uFFFD",
+    "Ratings": null
+  },
+  {
+    "Id": "5",
+    "Maker": "gvan",
+    "img": "https://logos-world.net/wp-content/uploads/2020/05/Arsenal-Logo-700x394.png",
+    "Url": "https://logos-world.net/arsenal-logo-history/",
+    "Title": "Arsenal",
+    "Description": "A modern red color on the Arsenal logo and form appeared due to the club Nottingham Forest. Fred Beardsley, Bill Parr, and Charlie Bates are the three football players, who moved from the last club to the Dial Square, the former Arsenal name, taking red shirts with them. There was no money even for new equipment, so they were forced to leave the T-shirts mentioned above, and bought the same ones to other players. Also, they gave white shorts and blue and white golf.",
+    "Ratings": [
+      1,
+      3
+    ]
+  }
+]
