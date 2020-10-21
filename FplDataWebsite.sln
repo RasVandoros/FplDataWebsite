@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FplDataWebsite.Website", "FplDataWebsite\FplDataWebsite.Website.csproj", "{0DC25D88-1B32-499F-8924-B3EB4A4045BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RateTeams.Website", "FplDataWebsite\RateTeams.Website.csproj", "{0DC25D88-1B32-499F-8924-B3EB4A4045BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -30,7 +30,7 @@ namespace FplDataWebsite
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddControllers();
-            services.AddTransient<JsonFileProductService>(); // gets a new every time you ask for a service
+            services.AddTransient<JsonFileTeamService>(); // gets a new every time you ask for a service
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

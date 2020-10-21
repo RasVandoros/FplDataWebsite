@@ -13,18 +13,18 @@ namespace FplDataWebsite.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        public JsonFileProductService ProductService;
-        public IEnumerable<Product> Products { get; private set; }
+        public JsonFileTeamService TeamService;
+        public IEnumerable<Team> Teams { get; private set; }
 
-        public IndexModel(ILogger<IndexModel> logger, JsonFileProductService productService)
+        public IndexModel(ILogger<IndexModel> logger, JsonFileTeamService teamService)
         {
-             ProductService= productService;
+             TeamService= teamService;
             _logger = logger;
         }
 
         public void OnGet()
         {
-            Products = ProductService.GetProducts();
+            Teams = TeamService.GetTeams();
         }
     }
 }

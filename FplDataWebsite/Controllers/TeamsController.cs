@@ -11,28 +11,28 @@ namespace FplDataWebsite.Website.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class ProductsController : ControllerBase
+    public class TeamsController : ControllerBase
     {
-        public ProductsController(JsonFileProductService productService)
+        public TeamsController(JsonFileTeamService teamsService)
         {
-            this.ProductService = productService;
+            this.TeamsService = teamsService;
         }
 
-        public JsonFileProductService ProductService { get;  }
+        public JsonFileTeamService TeamsService { get;  }
 
         [HttpGet]
-        public IEnumerable<Product> Get()
+        public IEnumerable<Team> Get()
         {
-            return ProductService.GetProducts();
+            return TeamsService.GetTeams();
         }
 
         [Route("Rate")]
         [HttpGet]
         public ActionResult Get(
-            [FromQuery] string ProductId, 
+            [FromQuery] string TeamId, 
             [FromQuery] int Rating)
         {
-            ProductService.AddRating(ProductId, Rating);
+            TeamsService.AddRating(TeamId, Rating);
             return Ok();
         }
     }

@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace FplDataWebsite.WebSite.Models
 {
-    public class Product
+    public class Team
     {
         public string Id { get; set; }
         public string Maker { get; set; }
@@ -19,7 +19,7 @@ namespace FplDataWebsite.WebSite.Models
 
         public override string ToString()
         {
-            return JsonSerializer.Serialize<Product>(this);
+            return JsonSerializer.Serialize<Team>(this);
         }
     }
 }

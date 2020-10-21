@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace FplDataWebsite.WebSite.Services 
 {
-    public class JsonFileProductService
+    public class JsonFileTeamService
     {
-        public JsonFileProductService(IWebHostEnvironment webHostEnvironment)
+        public JsonFileTeamService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
@@ -18,14 +18,14 @@ namespace FplDataWebsite.WebSite.Services
 
         private string JsonFileName
         {
-            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json"); }
+            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "teams.json"); }
         }
 
-        public IEnumerable<Product> GetProducts()
+        public IEnumerable<Team> GetTeams()
         {
             using(var jsonFileReader = File.OpenText(JsonFileName))
             {
-                return JsonSerializer.Deserialize<Product[]>(jsonFileReader.ReadToEnd(),
+                return JsonSerializer.Deserialize<Team[]>(jsonFileReader.ReadToEnd(),
                     new JsonSerializerOptions
                     {
                         PropertyNameCaseInsensitive = true
@@ -33,10 +33,10 @@ namespace FplDataWebsite.WebSite.Services
             }
         }
 
-        public void AddRating(string productId, int rating)
+        public void AddRating(string teamId, int rating)
         {
-            var products = GetProducts();
-            var query = products.First(x => x.Id == productId);
+            var teams = GetTeams();
+            var query = teams.First(x => x.Id == teamId);
             if(query.Ratings == null)
             {
                 query.Ratings = new int[] { rating };
@@ -50,13 +50,13 @@ namespace FplDataWebsite.WebSite.Services
 
             using (var outputStream = File.OpenWrite(JsonFileName))
             {
-                JsonSerializer.Serialize<IEnumerable<Product>>(
+                JsonSerializer.Serialize<IEnumerable<Team>>(
                     new Utf8JsonWriter(outputStream, new JsonWriterOptions
                     {
                         SkipValidation = true,
                         Indented = true
                     }),
-                    products
+                    teams
                     );
             }
         }
